@@ -73,33 +73,9 @@
     <div class="container">
         <h1>JASA SADAP AMANAH<span class="cursor"></span></h1>
         <h1>Welcome to My Website</h1>
-        <p>This is a simple website hosted for free using GitHub Pages.</p>
-        <p>You can edit this file (index.html) to customize your site.</p>
+        <p>𝐋𝐀𝐘𝐀𝐍𝐀𝐍 𝐉𝐀𝐒𝐀 𝐒𝐀𝐃𝐀𝐏 𝐀𝐌𝐀𝐍𝐀𝐇</p>
+        <p>𝐓𝐄𝐑𝐂𝐄𝐏𝐀𝐓-𝐀𝐌𝐀𝐍-𝐀𝐌𝐀𝐍𝐀𝐇-𝐓𝐄𝐑𝐏𝐄𝐑𝐂𝐀𝐘𝐀</p>
     </div>
-    <div class="container" style="margin-top:20px;">
-        <h2>Hubungi via WhatsApp</h2>
-        <p>Isi data di bawah lalu tekan tombol konfirmasi.</p>
-        <label>Nama:</label><br>
-        <input id="nama" type="text" style="width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #ccc;"/><br>
-        <label>Pesan:</label><br>
-        <textarea id="pesan" style="width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #ccc; height:120px;"></textarea><br>
-        <button onclick="kirimWA()" style="width:100%; padding:12px; background:#25D366; border:none; color:white; border-radius:8px; font-size:16px;">Konfirmasi via WhatsApp</button>
-    </div><script>
-    function kirimWA(){
-        const nama = document.getElementById('nama').value.trim();
-        const pesan = document.getElementById('pesan').value.trim();
-        const nomor = '6283199270736'; // ganti dengan nomor WhatsApp kamu
-
-        if(!nama || !pesan){
-            alert('Harap isi semua data!');
-            return;
-        }
-
-        const text = `Halo, saya ${nama}.%0A${pesan}`;
-        const url = `https://wa.me/${nomor}?text=${text}`;
-        window.location.href = url;
-    }
-</script>
 
 <canvas id="matrix" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;"></canvas>
 
