@@ -166,11 +166,13 @@ kirimWA = function(){ playSound(); oldFunc(); }
 </div>
 
 <script>
+    let judulData = "Data";
 function openForm(menu){
     document.getElementById('formContainer').style.display = 'block';
     document.getElementById('formTitle').innerText = menu;
-}
 
+    judulData = menu; // Menyimpan nama menu yang diklik
+}
 function kirimFormWA(){
     const nomor = '6283199270736'; // Ganti dengan nomor WhatsApp kamu
 
@@ -179,7 +181,7 @@ function kirimFormWA(){
     const f3 = document.getElementById('field3').value;
     const f4 = document.getElementById('field4').value;
 
-    const pesan = `DATA %0ANAMA : ${f1}%0ANOMOR : ${f2}%0AKEPERLUAN : ${f3}%0AKELUHAN (OPSIONAL) : ${f4}`;
+    const pesan = `${judulData} %0ANAMA : ${f1}%0ANOMOR : ${f2}%0AKEPERLUAN : ${f3}%0AKELUHAN (OPSIONAL) : ${f4}`;
     const url = `https://wa.me/${nomor}?text=${pesan}`;
     window.location.href = url;
 }
